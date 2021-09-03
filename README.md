@@ -29,6 +29,8 @@ o	This application offers overall abstraction for fetching data from External Gr
 o	It also is dynamically responsive for project based requirements, i.e., to display number of pages on the application and the number of images to be displayed per page. 
 o	It also has project structure organized for an enterprise level project.
 o	The internal REST API is environment ready, to be changes from localhost to dev environment to a prod environment.
+o	Also, error handling is provided with messages which can be updated according to the requirements.
+
 
 
 ## Post-script:
