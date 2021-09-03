@@ -31,11 +31,9 @@ o	It also has project structure organized for an enterprise level project.
 o	The internal REST API is environment ready, to be changes from localhost to dev environment to a prod environment.
 
 
-
-
 ## Post-script:
 o	Thanks for this assignment, I got to learn about Next.js.
-o	It took a little more than 4 hours to reach to this point of the application because of my unfamiliarity with Next.js
+o	It took a little more than 4 hours to reach to this point of the application because of my unfamiliarity with Next.js.
 o	I was able make myself familiarize with File-base-routing, API Routes and different rendering techniques offered by Next.js for Search Engine Optimization (SEO)- SSR & SSG.
 o	If time permitted, I would have learnt about testing the application in Next.js, different caching techniques like react-component-caching. I would have provided better API Documentation and better user-experience with the application.
 
