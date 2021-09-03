@@ -1,0 +1,33 @@
+.item {
+  display: inline-block;
+  width: 45%;
+  height: 700px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px 10px;
+}
+
+.image {
+  width: 100%;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+  color: #2c292b;
+}
+
+.clear {
+  clear: both;
+}

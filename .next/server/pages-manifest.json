@@ -1,0 +1,10 @@
+{
+  "/_app": "pages/_app.js",
+  "/api/anilist-api": "pages/api/anilist-api.js",
+  "/": "pages/index.js",
+  "/page/[pageId]": "pages/page/[pageId].js",
+  "/rest-api": "pages/rest-api.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
