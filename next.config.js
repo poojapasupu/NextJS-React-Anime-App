@@ -15,7 +15,7 @@ module.exports = (phase) => {
   return {
     reactStrictMode: true,
     env: {
-      ENV_VAR: "http://localhost:3000",
+      ENV_VAR: "https://next-js-react-anime-app.vercel.app",
     },
   };
 };
