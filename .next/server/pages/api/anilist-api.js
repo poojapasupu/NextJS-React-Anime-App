@@ -5,7 +5,7 @@ exports.id = 991;
 exports.ids = [991];
 exports.modules = {
 
-/***/ 928:
+/***/ 224:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -18,7 +18,7 @@ const EXTERNAL_ANILIST_API = 'https://graphql.anilist.co';
 
 /***/ }),
 
-/***/ 672:
+/***/ 118:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -33,7 +33,7 @@ const REST_API_IMAGES_PER_PAGE = 10;
 
 /***/ }),
 
-/***/ 568:
+/***/ 668:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -46,7 +46,7 @@ const PAGE_NOT_FOUND_404 = '404 - Page Not Found. Please visit \'Home\' page';
 
 /***/ }),
 
-/***/ 449:
+/***/ 458:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -79,13 +79,13 @@ const GET_MEDIA_BY_PAGE = `query ($page: Int, $perPage: Int) {
         }
     }
 }`;
-// EXTERNAL MODULE: ./lib/properties/app-variables.js
-var app_variables = __webpack_require__(672);
-// EXTERNAL MODULE: ./lib/properties/error-properties.js
-var error_properties = __webpack_require__(568);
-// EXTERNAL MODULE: ./lib/properties/api-urls.js
-var api_urls = __webpack_require__(928);
-;// CONCATENATED MODULE: ./pages/api/anilist-api.js
+// EXTERNAL MODULE: ./lib/properties/app-variables.ts
+var app_variables = __webpack_require__(118);
+// EXTERNAL MODULE: ./lib/properties/error-properties.ts
+var error_properties = __webpack_require__(668);
+// EXTERNAL MODULE: ./lib/properties/api-urls.ts
+var api_urls = __webpack_require__(224);
+;// CONCATENATED MODULE: ./pages/api/anilist-api.ts
 
 
 
@@ -117,25 +117,26 @@ const handler = (req, res) => {
         query: GET_MEDIA_BY_PAGE,
         variables
       })
-    }; // Anilist Api request
+    };
 
-    fetch(api_urls/* EXTERNAL_ANILIST_API */.T, options).then(handleResponse).then(handleData).catch(handleError);
-
-    function handleResponse(response) {
+    const handleResponse = async response => {
       return response.json().then(function (json) {
         return response.ok ? json : Promise.reject(json);
       });
-    }
+    };
 
-    function handleData(response) {
+    const handleData = response => {
       res.status(200).json(response);
-    }
+    };
 
-    function handleError(error) {
+    const handleError = error => {
       res.status(500).json({
         error: error_properties/* FETCH_ERROR */.c
       });
-    }
+    }; // Anilist Api request
+
+
+    fetch(api_urls/* EXTERNAL_ANILIST_API */.T, options).then(handleResponse).then(handleData).catch(handleError);
   }
 };
 
@@ -150,7 +151,7 @@ const handler = (req, res) => {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(449));
+var __webpack_exports__ = (__webpack_exec__(458));
 module.exports = __webpack_exports__;
 
 })();

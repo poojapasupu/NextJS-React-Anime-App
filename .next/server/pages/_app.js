@@ -4,7 +4,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 672:
+/***/ 118:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20,7 +20,7 @@ const REST_API_IMAGES_PER_PAGE = 10;
 
 /***/ }),
 
-/***/ 723:
+/***/ 802:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -39,14 +39,14 @@ var MainNavigation_module_default = /*#__PURE__*/__webpack_require__.n(MainNavig
 var next_link = __webpack_require__(664);
 // EXTERNAL MODULE: external "react/jsx-runtime"
 var jsx_runtime_ = __webpack_require__(282);
-;// CONCATENATED MODULE: ./components/layout/MainNavigation.js
+;// CONCATENATED MODULE: ./components/layout/MainNavigation.tsx
 
 
 
 
 
 
-function MainNavigation() {
+const MainNavigation = () => {
   return /*#__PURE__*/jsx_runtime_.jsx(jsx_runtime_.Fragment, {
     children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("header", {
       className: (MainNavigation_module_default()).header,
@@ -70,7 +70,7 @@ function MainNavigation() {
       })]
     })
   });
-}
+};
 
 /* harmony default export */ const layout_MainNavigation = (MainNavigation);
 // EXTERNAL MODULE: ./components/layout/Layout.module.css
@@ -81,10 +81,9 @@ var external_react_ = __webpack_require__(297);
 // EXTERNAL MODULE: ./components/layout/PageNavigation.module.css
 var PageNavigation_module = __webpack_require__(607);
 var PageNavigation_module_default = /*#__PURE__*/__webpack_require__.n(PageNavigation_module);
-// EXTERNAL MODULE: ./lib/properties/app-variables.js
-var app_variables = __webpack_require__(672);
-;// CONCATENATED MODULE: ./components/layout/DynamicPageNumbers.js
-
+// EXTERNAL MODULE: ./lib/properties/app-variables.ts
+var app_variables = __webpack_require__(118);
+;// CONCATENATED MODULE: ./components/layout/DynamicPageNumbers.tsx
 
 
 
@@ -100,28 +99,25 @@ const DynamicPageNumbers = () => {
 
   return /*#__PURE__*/jsx_runtime_.jsx("ul", {
     children: numArray.map(num => {
-      return /*#__PURE__*/(0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-        children: [num === 1 && /*#__PURE__*/jsx_runtime_.jsx("li", {
-          children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-            href: "/",
+      return /*#__PURE__*/(0,jsx_runtime_.jsxs)("li", {
+        children: [num === 1 && /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+          href: "/",
+          children: /*#__PURE__*/jsx_runtime_.jsx("a", {
             children: "1"
           })
-        }), num !== 1 && /*#__PURE__*/jsx_runtime_.jsx("li", {
-          children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-            href: `/page/${num}`,
-            children: /*#__PURE__*/jsx_runtime_.jsx("a", {
-              children: num
-            })
+        }), num !== 1 && /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+          href: `/page/${num}`,
+          children: /*#__PURE__*/jsx_runtime_.jsx("a", {
+            children: num
           })
         })]
-      });
+      }, num);
     })
   });
 };
 
 /* harmony default export */ const layout_DynamicPageNumbers = (DynamicPageNumbers);
-;// CONCATENATED MODULE: ./components/layout/PageNavigation.js
-
+;// CONCATENATED MODULE: ./components/layout/PageNavigation.tsx
 
 
 
@@ -140,21 +136,23 @@ const PageNavigation = () => {
 };
 
 /* harmony default export */ const layout_PageNavigation = (PageNavigation);
-;// CONCATENATED MODULE: ./components/layout/Layout.js
+;// CONCATENATED MODULE: ./components/layout/Layout.tsx
 
 
 
 
 
 
-function Layout(props) {
+const Layout = ({
+  children
+}) => {
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
     children: [/*#__PURE__*/jsx_runtime_.jsx(layout_MainNavigation, {}), /*#__PURE__*/jsx_runtime_.jsx("main", {
       className: (Layout_module_default()).main,
-      children: props.children
+      children: children
     }), /*#__PURE__*/jsx_runtime_.jsx(layout_PageNavigation, {})]
   });
-}
+};
 
 /* harmony default export */ const layout_Layout = (Layout);
 ;// CONCATENATED MODULE: ./pages/_app.js
@@ -337,7 +335,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [664], () => (__webpack_exec__(723)));
+var __webpack_exports__ = __webpack_require__.X(0, [664], () => (__webpack_exec__(802)));
 module.exports = __webpack_exports__;
 
 })();
