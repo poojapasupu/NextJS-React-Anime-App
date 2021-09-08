@@ -7,7 +7,6 @@ type Request = {
 
 //POST method call to the internal API
 export const internalPostRequest = async (req: Request): Promise<ApiData> => {
-  console.log(`${process.env.ENV_VAR}${INTERNAL_ANILIST_API}`);
   const response = await fetch(`${process.env.ENV_VAR}${INTERNAL_ANILIST_API}`, {
     method: "POST",
     headers: {

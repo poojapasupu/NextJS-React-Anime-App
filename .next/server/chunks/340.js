@@ -88,8 +88,7 @@ const MediaList = props => {
 
 //POST method call to the internal API
 const internalPostRequest = async req => {
-  console.log(`${"http://localhost:3000"}${_properties_api_urls__WEBPACK_IMPORTED_MODULE_0__/* .INTERNAL_ANILIST_API */ .v}`);
-  const response = await fetch(`${"http://localhost:3000"}${_properties_api_urls__WEBPACK_IMPORTED_MODULE_0__/* .INTERNAL_ANILIST_API */ .v}`, {
+  const response = await fetch(`${"https://next-js-react-anime-app.vercel.app"}${_properties_api_urls__WEBPACK_IMPORTED_MODULE_0__/* .INTERNAL_ANILIST_API */ .v}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -101,7 +100,7 @@ const internalPostRequest = async req => {
 }; //GET method call to the internal API
 
 const internalGetRequest = async () => {
-  const response = await fetch(`${"http://localhost:3000"}${_properties_api_urls__WEBPACK_IMPORTED_MODULE_0__/* .INTERNAL_ANILIST_API */ .v}`, {
+  const response = await fetch(`${"https://next-js-react-anime-app.vercel.app"}${_properties_api_urls__WEBPACK_IMPORTED_MODULE_0__/* .INTERNAL_ANILIST_API */ .v}`, {
     method: "GET"
   });
   const data = await response.json();
