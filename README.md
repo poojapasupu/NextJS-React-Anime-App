@@ -39,3 +39,9 @@ Enhanced caching techniques, which will improve the Server-side-rendering SSR.
 - I was able make myself familiarize with File-base-routing, API Routes and different rendering techniques offered by Next.js for Search Engine Optimization (SEO)- SSR & SSG. 
 - If time permitted, I would have learnt about testing the application in Next.js, different caching techniques like react-component-caching. I would have provided better API Documentation and better user-experience with the application.
 
+## Recent Enhancements:
+- Included TypeScripting to the project
+
+## Published Link:
+https://next-js-react-anime-app.vercel.app/
+
