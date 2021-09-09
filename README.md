@@ -40,7 +40,9 @@ Enhanced caching techniques, which will improve the Server-side-rendering SSR.
 - If time permitted, I would have learnt about testing the application in Next.js, different caching techniques like react-component-caching. I would have provided better API Documentation and better user-experience with the application.
 
 ## Recent Enhancements:
-- Included TypeScripting to the project
+- Included TypeScripting to the project.
+- Added more ES6 functionalities.
+- Include Node Environment variables for development and prod servers.
 
 ## Published Link:
 https://next-js-react-anime-app.vercel.app/
