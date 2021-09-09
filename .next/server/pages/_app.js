@@ -20,7 +20,7 @@ const REST_API_IMAGES_PER_PAGE = 10;
 
 /***/ }),
 
-/***/ 802:
+/***/ 204:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -155,7 +155,7 @@ const Layout = ({
 };
 
 /* harmony default export */ const layout_Layout = (Layout);
-;// CONCATENATED MODULE: ./pages/_app.js
+;// CONCATENATED MODULE: ./pages/_app.tsx
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -335,7 +335,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [664], () => (__webpack_exec__(802)));
+var __webpack_exports__ = __webpack_require__.X(0, [664], () => (__webpack_exec__(204)));
 module.exports = __webpack_exports__;
 
 })();
