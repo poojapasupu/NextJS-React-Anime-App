@@ -4,23 +4,7 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 118:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "U8": () => (/* binding */ NUMBER_OF_PAGES),
-/* harmony export */   "a5": () => (/* binding */ IMAGES_PER_PAGE),
-/* harmony export */   "Wc": () => (/* binding */ REST_API_IMAGES_PER_PAGE)
-/* harmony export */ });
-/* Application variables */
-const NUMBER_OF_PAGES = 3;
-const IMAGES_PER_PAGE = 4;
-const REST_API_IMAGES_PER_PAGE = 10;
-
-/***/ }),
-
-/***/ 204:
+/***/ 9204:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -33,12 +17,12 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: ./components/layout/MainNavigation.module.css
-var MainNavigation_module = __webpack_require__(284);
+var MainNavigation_module = __webpack_require__(7284);
 var MainNavigation_module_default = /*#__PURE__*/__webpack_require__.n(MainNavigation_module);
 // EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(664);
+var next_link = __webpack_require__(1664);
 // EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(282);
+var jsx_runtime_ = __webpack_require__(5282);
 ;// CONCATENATED MODULE: ./components/layout/MainNavigation.tsx
 
 
@@ -74,15 +58,15 @@ const MainNavigation = () => {
 
 /* harmony default export */ const layout_MainNavigation = (MainNavigation);
 // EXTERNAL MODULE: ./components/layout/Layout.module.css
-var Layout_module = __webpack_require__(444);
+var Layout_module = __webpack_require__(6444);
 var Layout_module_default = /*#__PURE__*/__webpack_require__.n(Layout_module);
 // EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(297);
+var external_react_ = __webpack_require__(9297);
 // EXTERNAL MODULE: ./components/layout/PageNavigation.module.css
-var PageNavigation_module = __webpack_require__(607);
+var PageNavigation_module = __webpack_require__(7607);
 var PageNavigation_module_default = /*#__PURE__*/__webpack_require__.n(PageNavigation_module);
 // EXTERNAL MODULE: ./lib/properties/app-variables.ts
-var app_variables = __webpack_require__(118);
+var app_variables = __webpack_require__(4118);
 ;// CONCATENATED MODULE: ./components/layout/DynamicPageNumbers.tsx
 
 
@@ -155,6 +139,8 @@ const Layout = ({
 };
 
 /* harmony default export */ const layout_Layout = (Layout);
+// EXTERNAL MODULE: ./store/media-context.tsx
+var media_context = __webpack_require__(1872);
 ;// CONCATENATED MODULE: ./pages/_app.tsx
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
@@ -166,12 +152,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
 const MyApp = ({
   Component,
   pageProps
 }) => {
-  return /*#__PURE__*/jsx_runtime_.jsx(layout_Layout, {
-    children: /*#__PURE__*/jsx_runtime_.jsx(Component, _objectSpread({}, pageProps))
+  return /*#__PURE__*/jsx_runtime_.jsx(media_context/* MediaContextProvider */.C1, {
+    children: /*#__PURE__*/jsx_runtime_.jsx(layout_Layout, {
+      children: /*#__PURE__*/jsx_runtime_.jsx(Component, _objectSpread({}, pageProps))
+    })
   });
 };
 
@@ -179,20 +168,7 @@ const MyApp = ({
 
 /***/ }),
 
-/***/ 444:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"main": "Layout_main__2Mwq5",
-	"error": "Layout_error__2eYO-",
-	"rest": "Layout_rest__3E0kj"
-};
-
-
-/***/ }),
-
-/***/ 284:
+/***/ 7284:
 /***/ ((module) => {
 
 // Exports
@@ -205,7 +181,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 607:
+/***/ 7607:
 /***/ ((module) => {
 
 // Exports
@@ -217,7 +193,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 325:
+/***/ 9325:
 /***/ ((module) => {
 
 "use strict";
@@ -225,7 +201,7 @@ module.exports = require("next/dist/server/denormalize-page-path.js");
 
 /***/ }),
 
-/***/ 378:
+/***/ 5378:
 /***/ ((module) => {
 
 "use strict";
@@ -233,7 +209,7 @@ module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
 
 /***/ }),
 
-/***/ 162:
+/***/ 7162:
 /***/ ((module) => {
 
 "use strict";
@@ -241,7 +217,7 @@ module.exports = require("next/dist/shared/lib/mitt.js");
 
 /***/ }),
 
-/***/ 773:
+/***/ 8773:
 /***/ ((module) => {
 
 "use strict";
@@ -249,7 +225,7 @@ module.exports = require("next/dist/shared/lib/router-context.js");
 
 /***/ }),
 
-/***/ 248:
+/***/ 2248:
 /***/ ((module) => {
 
 "use strict";
@@ -257,7 +233,7 @@ module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-
 
 /***/ }),
 
-/***/ 372:
+/***/ 9372:
 /***/ ((module) => {
 
 "use strict";
@@ -273,7 +249,7 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.j
 
 /***/ }),
 
-/***/ 747:
+/***/ 2747:
 /***/ ((module) => {
 
 "use strict";
@@ -289,7 +265,7 @@ module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
 
 /***/ }),
 
-/***/ 456:
+/***/ 3456:
 /***/ ((module) => {
 
 "use strict";
@@ -297,7 +273,7 @@ module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
 
-/***/ 620:
+/***/ 7620:
 /***/ ((module) => {
 
 "use strict";
@@ -305,7 +281,7 @@ module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
-/***/ 297:
+/***/ 9297:
 /***/ ((module) => {
 
 "use strict";
@@ -313,18 +289,11 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ 282:
+/***/ 5282:
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("react/jsx-runtime");
-
-/***/ }),
-
-/***/ 431:
-/***/ (() => {
-
-/* (ignored) */
 
 /***/ })
 
@@ -335,7 +304,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [664], () => (__webpack_exec__(204)));
+var __webpack_exports__ = __webpack_require__.X(0, [920,664,455], () => (__webpack_exec__(9204)));
 module.exports = __webpack_exports__;
 
 })();

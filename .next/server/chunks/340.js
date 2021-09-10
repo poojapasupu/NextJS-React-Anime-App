@@ -13,15 +13,15 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(297);
+var external_react_ = __webpack_require__(9297);
 // EXTERNAL MODULE: external "html-react-parser"
-var external_html_react_parser_ = __webpack_require__(51);
+var external_html_react_parser_ = __webpack_require__(7051);
 var external_html_react_parser_default = /*#__PURE__*/__webpack_require__.n(external_html_react_parser_);
 // EXTERNAL MODULE: ./components/media/MediaItem.module.css
-var MediaItem_module = __webpack_require__(909);
+var MediaItem_module = __webpack_require__(9909);
 var MediaItem_module_default = /*#__PURE__*/__webpack_require__.n(MediaItem_module);
 // EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(282);
+var jsx_runtime_ = __webpack_require__(5282);
 ;// CONCATENATED MODULE: ./components/media/MediaItem.tsx
 
 
@@ -49,7 +49,7 @@ const MediaItem = props => {
 
 /* harmony default export */ const media_MediaItem = (MediaItem);
 // EXTERNAL MODULE: ./components/media/MediaList.module.css
-var MediaList_module = __webpack_require__(7);
+var MediaList_module = __webpack_require__(4007);
 var MediaList_module_default = /*#__PURE__*/__webpack_require__.n(MediaList_module);
 ;// CONCATENATED MODULE: ./components/media/MediaList.tsx
 
@@ -76,7 +76,7 @@ const MediaList = props => {
 
 /***/ }),
 
-/***/ 673:
+/***/ 3673:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -84,7 +84,7 @@ const MediaList = props => {
 /* harmony export */   "D": () => (/* binding */ internalPostRequest),
 /* harmony export */   "H": () => (/* binding */ internalGetRequest)
 /* harmony export */ });
-/* harmony import */ var _properties_api_urls__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(224);
+/* harmony import */ var _properties_api_urls__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7224);
 
 //POST method call to the internal API
 const internalPostRequest = async req => {
@@ -109,7 +109,7 @@ const internalGetRequest = async () => {
 
 /***/ }),
 
-/***/ 224:
+/***/ 7224:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -123,7 +123,7 @@ const EXTERNAL_ANILIST_API = 'https://graphql.anilist.co';
 
 /***/ }),
 
-/***/ 909:
+/***/ 9909:
 /***/ ((module) => {
 
 // Exports
@@ -137,7 +137,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 7:
+/***/ 4007:
 /***/ ((module) => {
 
 // Exports

@@ -5,7 +5,7 @@ exports.id = 991;
 exports.ids = [991];
 exports.modules = {
 
-/***/ 224:
+/***/ 7224:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -18,7 +18,7 @@ const EXTERNAL_ANILIST_API = 'https://graphql.anilist.co';
 
 /***/ }),
 
-/***/ 118:
+/***/ 4118:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -27,13 +27,13 @@ const EXTERNAL_ANILIST_API = 'https://graphql.anilist.co';
 /* harmony export */   "Wc": () => (/* binding */ REST_API_IMAGES_PER_PAGE)
 /* harmony export */ });
 /* Application variables */
-const NUMBER_OF_PAGES = 3;
-const IMAGES_PER_PAGE = 4;
+const NUMBER_OF_PAGES = 5;
+const IMAGES_PER_PAGE = 6;
 const REST_API_IMAGES_PER_PAGE = 10;
 
 /***/ }),
 
-/***/ 668:
+/***/ 2668:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -46,7 +46,7 @@ const PAGE_NOT_FOUND_404 = '404 - Page Not Found. Please visit \'Home\' page';
 
 /***/ }),
 
-/***/ 458:
+/***/ 3458:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -65,7 +65,7 @@ const GET_MEDIA_BY_PAGE = `query ($page: Int, $perPage: Int) {
             perPage
             currentPage
         }
-        media {
+        media (isAdult:false){
             id
             title {
                 userPreferred  
@@ -80,11 +80,11 @@ const GET_MEDIA_BY_PAGE = `query ($page: Int, $perPage: Int) {
     }
 }`;
 // EXTERNAL MODULE: ./lib/properties/app-variables.ts
-var app_variables = __webpack_require__(118);
+var app_variables = __webpack_require__(4118);
 // EXTERNAL MODULE: ./lib/properties/error-properties.ts
-var error_properties = __webpack_require__(668);
+var error_properties = __webpack_require__(2668);
 // EXTERNAL MODULE: ./lib/properties/api-urls.ts
-var api_urls = __webpack_require__(224);
+var api_urls = __webpack_require__(7224);
 ;// CONCATENATED MODULE: ./pages/api/anilist-api.ts
 
 
@@ -151,7 +151,7 @@ const handler = (req, res) => {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(458));
+var __webpack_exports__ = (__webpack_exec__(3458));
 module.exports = __webpack_exports__;
 
 })();

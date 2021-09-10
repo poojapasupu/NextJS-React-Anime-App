@@ -5,7 +5,7 @@ exports.id = 820;
 exports.ids = [820];
 exports.modules = {
 
-/***/ 359:
+/***/ 3359:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -15,9 +15,9 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.default = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(297));
+var _react = _interopRequireDefault(__webpack_require__(9297));
 
-var _head = _interopRequireDefault(__webpack_require__(695));
+var _head = _interopRequireDefault(__webpack_require__(6695));
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -109,14 +109,14 @@ const styles = {
 
 /***/ }),
 
-/***/ 695:
+/***/ 6695:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/head.js");
 
 /***/ }),
 
-/***/ 297:
+/***/ 9297:
 /***/ ((module) => {
 
 module.exports = require("react");
@@ -130,7 +130,7 @@ module.exports = require("react");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(359));
+var __webpack_exports__ = (__webpack_exec__(3359));
 module.exports = __webpack_exports__;
 
 })();

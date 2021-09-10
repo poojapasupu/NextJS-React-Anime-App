@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/IpHZZWeEMZr3Rkw4om7oh/_buildManifest.js",
-    "static/IpHZZWeEMZr3Rkw4om7oh/_ssgManifest.js"
+    "static/4_RiXiKLWjHOU0O4ugivR/_buildManifest.js",
+    "static/4_RiXiKLWjHOU0O4ugivR/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -22,7 +22,7 @@
       "static/chunks/framework-895f067827ebe11ffe45.js",
       "static/chunks/main-62b8caa3ccc47893b147.js",
       "static/css/17f4a9a8dc1e61a657ba.css",
-      "static/chunks/pages/_app-024337cf67e961f28580.js"
+      "static/chunks/pages/_app-1660bca07dae283308e9.js"
     ],
     "/_error": [
       "static/chunks/webpack-f47d69457824065d04c3.js",
@@ -36,7 +36,7 @@
       "static/chunks/main-62b8caa3ccc47893b147.js",
       "static/chunks/935-0b80e1aff341278df0a9.js",
       "static/css/507b717aefdc499377b8.css",
-      "static/chunks/pages/page/[pageId]-ba2c3345c7eeb6cbd8d6.js"
+      "static/chunks/pages/page/[pageId]-6f07331543eb5e8c1822.js"
     ],
     "/rest-api": [
       "static/chunks/webpack-f47d69457824065d04c3.js",
